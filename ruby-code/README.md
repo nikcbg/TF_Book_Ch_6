@@ -1,0 +1,1 @@
+Terraform automated test example
