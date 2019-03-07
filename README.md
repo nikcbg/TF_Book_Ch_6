@@ -38,7 +38,7 @@
 
 #### Ruby automated test for webservers cluster 
                     
-6.[ruby-code](https://github.com/nikcbg/TF_Book_Ch_6/tree/master/ruby-code) - Ruby automated test for webservers cluster that runs Ruby script which will apply Terraform code and then it will test if the wenservers cluster returns "Hello World"
+6.[ruby-code](https://github.com/nikcbg/TF_Book_Ch_6/tree/master/ruby-code) - Ruby automated test for webservers cluster that runs Ruby script which will apply Terraform code and then it will test if the webservers cluster returns "Hello World"
 
 ------------------------------------------------------------------------------------------------------------------
 
