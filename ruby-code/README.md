@@ -1,6 +1,6 @@
 # Ruby automated test for webservers cluster
 
-Ruby automated test for webservers cluster which will apply Terraform code and then it will test if the webservers cluster returns "Hello World" and then destroy the webservers cluster. 
+Ruby automated test for webservers cluster and load balancer which will apply Terraform code and then it will test if the webservers cluster returns "Hello World" and then destroy the webservers cluster and load balancer. 
 
 ---------------------------------------------------------------------------------------------------------------------------
 ### Pre-requisites for running the Ruby script:
@@ -41,7 +41,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
   module.webserver_cluster.aws_elb.example: Creation complete after 10s (ID: GRSFBR)
   module.webserver_cluster.aws_autoscaling_group.example: Creation complete after 3m37s (ID: GRSFBR-terraform-20190308093025464700000001)
   module.webserver_cluster.aws_cloudwatch_metric_alarm.high_cpu_utilization: Creation complete after 1s (ID: GRSFBR-high-cpu-utilization)
- module.webserver_cluster.aws_cloudwatch_metric_alarm.low_cpu_credit_balance: Creation complete after 1s (ID: GRSFBR-low-cpu-  credit-balance)
+  module.webserver_cluster.aws_cloudwatch_metric_alarm.low_cpu_credit_balance: Creation complete after 1s (ID: GRSFBR-low-cpu-  credit-balance)
 
  Apply complete! Resources: 11 added, 0 changed, 0 destroyed.
 
@@ -49,7 +49,6 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 
  elb_dns_name = GRSFBR-1116145917.us-east-1.elb.amazonaws.com
  Output from http://GRSFBR-1116145917.us-east-1.elb.amazonaws.com/: 
- Sleeping for 30 seconds and trying again
  Output from http://GRSFBR-1116145917.us-east-1.elb.amazonaws.com/: <h1>Hello, World</h1>
  <p>DB address: terraform-20190307133111016400000001.cbwxzimiiwhb.us-east-1.rds.amazonaws.com</p>
  <p>DB port: 3306</p>
@@ -72,3 +71,4 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
  Destroy complete! Resources: 11 destroyed.
  
 ```
+- as you can see the ruby script creates webservers cluster and load balancer that tests if the webservers cluster returns "Hello World" and then destroy the webservers cluster and laod balancer. 
