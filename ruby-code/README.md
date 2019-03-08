@@ -54,7 +54,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
  <p>DB port: 3306</p>
  Success!
  
- Undeploying code in /home/nikolay/repos/book_examples/ch6/TF_Book_Ch_6/terraform-code/live/stage/services/webserver-cluster
+ Undeploying code in /path/to/your/ruby/script/terraform-code/live/stage/services/webserver-cluster
  
  module.webserver_cluster.aws_cloudwatch_metric_alarm.high_cpu_utilization: Destruction complete after 1s
  module.webserver_cluster.aws_cloudwatch_metric_alarm.low_cpu_credit_balance: Destruction complete after 1s
