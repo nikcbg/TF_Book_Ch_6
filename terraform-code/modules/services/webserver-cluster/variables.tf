@@ -44,3 +44,4 @@ variable "server_text" {
 variable "aws_region" {
   description = "The AWS region to use"
 }
+
